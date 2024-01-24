@@ -11,15 +11,15 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', function () {
+Route::get('#', function () {
     return view('welcome');
 });
 
 
-Route::get('/Acceuil', [AccueilController::class, 'pagecentrale']);
-Route::get('/Cabinet', [CabinetController::class, 'pagecabinet']);
-Route::get('/Service', [ServiceController::class, 'pageservice']);
-Route::get('/Formation', [FormationController::class, 'pageformation']);
-Route::get('/Faq', [FaqController::class, 'pagefaq']);
-Route::get('/Contact', [ContactController::class, 'pagecontact']);
-Route::get('/Actualite', [ActualiteController::class], 'pageactualite');
+Route::get('/', [AccueilController::class, 'pagecentrale'])->name('accueil');
+Route::get('/Cabinet', [CabinetController::class, 'pagecabinet'])->name('Cabinet');
+Route::get('/Service', [ServiceController::class, 'pageservice'])->name('service');
+Route::get('/Formation', [FormationController::class, 'pageformation'])->name('formation');
+Route::get('/Faq', [FaqController::class, 'pagefaq'])->name('faq');
+Route::get('/Contact', [ContactController::class, 'pagecontact'])->name('contact');
+Route::get('/Actualite', [ActualiteController::class, 'pageactualite'])->name('actualite');

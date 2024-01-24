@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class CabinetController extends Controller
 {
-    //
+    public function pagecabinet(){
+        return view('Cabinet');
+    }
 }
