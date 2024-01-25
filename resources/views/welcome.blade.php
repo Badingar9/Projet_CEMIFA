@@ -11,7 +11,10 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
      </head>
+
     <body>
+
+
             <nav class="navbar">
                 <div class="logo-container">
                 <a href="#" class="logo">CEMIFA Consulting</a>
@@ -33,7 +36,7 @@
                             </li>
                             <li><a class="formations" href="#">NOS FORMATIONS</a>
                             <ul class="nosformations">
-                                <li><a href="#">GESTION FINANCIERE</a></li>
+                                <li><a href="{{route('gestion_financiere')}}">GESTION FINANCIERE</a></li>
                                 <li><a href="#">GRH</a></li>
                                 <li><a href="#">GESTION DES PROJETS</a></li>
                                 <li><a href="#">INFORMATIQUE: Sage 100 i7</a></li>
@@ -53,10 +56,10 @@
                         </ul>
                      </div>
              </nav>
-
-          {{-- Appel de toute page --}}
+<main>
+        {{-- Appel de toute page --}}
         @yield('base')
-
+    </main>
   <!-- Le pied de page -->
         <footer>
                 <div class="footer-top">
@@ -96,6 +99,7 @@
 
         {{-- fichiers JS pour tout le site --}}
         @include('Script_CEMIFA')
+
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

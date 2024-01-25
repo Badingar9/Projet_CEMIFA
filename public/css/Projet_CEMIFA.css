@@ -1,6 +1,6 @@
 :root {
-    --main-color: #004C99;
-    --body-bg: #E0E0E0;
+    --main-color: #054585;
+    --body-bg: white;
     --font-family-logo: OCR A Std, monospace;
     --font-family-links: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     --font-family-centrale: Trebuchet MS;
@@ -525,6 +525,96 @@
       #nextBtn {
         right: 3em;
       }
+
+      .section1, .section2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .p{
+        color: rgb(0, 0, 0);
+    }
+    .img-cab{
+        position: relative;
+        width: 100%;
+        height: 20%;
+        top: 0.5rem
+    }
+    .posi-texte{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        color: black;
+        font-size: 70px;
+        font-family: "Montserrat";
+
+    }
+    .section2{
+        align-items: center;
+    }
+
+    .article,
+    .photo {
+        height: 50vh;
+        margin: 1rem;
+        width: 50%;
+
+    }
+
+    .secteur {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        /* height: 80vh;
+        width: 100%; */
+        align-items: center;
+        color: white;
+        background-color: rgb(23, 38, 72);
+        margin: 1rem 1rem 4rem 1rem;
+        padding: 2rem;
+    }
+
+    .ligne {
+        display: flex;
+        margin-bottom: 2rem;
+
+    }
+
+    .article {
+        padding: 1rem;
+        color: grey;
+    }
+
+    .article h2 {
+        color: black;
+    }
+
+    .photo {
+
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .lesexperts{
+        display: flex;
+    }
+    .section2 h2{
+        margin-bottom: 10rem;
+    }
+    .expert{
+        margin: 2%;
+        background-color: white;
+        padding: 10rem 2rem 2rem 2rem;
+        position: relative;
+    }
+    .photo_expert img{
+        border-radius: 50%;
+        width: 50%;
+        position: absolute;
+        top: -150px;
+        right: 120px;
+
+    }
+    .desc_expert{
+        padding-top: 9rem;
+    }
 
 
       @keyframes scrollCards {

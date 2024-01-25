@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('#', function () {
     return view('welcome');
 });
-
+Route::get('/Gfinance', function () {
+    return view('FORMATIONS.Gfinance');
+})->name('gestion_financiere');
 
 Route::get('/', [AccueilController::class, 'pagecentrale'])->name('accueil');
 Route::get('/Cabinet', [CabinetController::class, 'pagecabinet'])->name('Cabinet');
